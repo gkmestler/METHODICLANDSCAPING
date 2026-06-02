@@ -151,6 +151,14 @@ h1, h2, h3 {
   color: #FFFFFF;
 }
 
+/* On mobile, show just the logo mark so "LANDSCAPING" doesn't crowd the menu button */
+@media (max-width: 767px) {
+  .logo-divider,
+  .logo-tagline {
+    display: none;
+  }
+}
+
 .logo .logo-black {
   opacity: 1;
 }
