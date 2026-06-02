@@ -129,15 +129,23 @@ export default function QualifyPage() {
               <div className="form-grid">
                 <div className="form-field">
                   <label htmlFor="businessType">Type of Business</label>
-                  <input
-                    type="text"
-                    id="businessType"
-                    name="businessType"
-                    value={formData.businessType}
-                    onChange={handleChange}
-                    placeholder="e.g., HVAC, Plumbing, Landscaping"
-                    required
-                  />
+                  <div className="select-wrapper">
+                    <select
+                      id="businessType"
+                      name="businessType"
+                      value={formData.businessType}
+                      onChange={handleChange}
+                      required
+                    >
+                      <option value="">Select...</option>
+                      <option value="Lawn Maintenance">Lawn Maintenance</option>
+                      <option value="Design & Build">Design & Build</option>
+                      <option value="Hardscaping">Hardscaping</option>
+                      <option value="Commercial Grounds">Commercial Grounds</option>
+                      <option value="Full Service">Full Service</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
                 </div>
                 <div className="form-field">
                   <label htmlFor="location">Location</label>

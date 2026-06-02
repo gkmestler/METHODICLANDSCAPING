@@ -1,11 +1,11 @@
-# Valient Website
+# Methodic Landscaping Website
 
-A modern, responsive marketing website for Valient - a private equity firm that buys and grows blue-collar businesses.
+A modern, responsive marketing website for Methodic Landscaping - a landscaping and hardscaping roll-up acquiring businesses across New England.
 
 ## Features
 
 - Mobile-first responsive design
-- Clean, modern aesthetic matching the Canva design
+- Clean, modern aesthetic
 - Team member profiles with photos
 - Strategic advisors section
 - Smooth scroll animations
@@ -32,10 +32,12 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+Note: the contact form route uses Resend. Set `RESEND_API_KEY` in your environment for the `/api/contact` endpoint (and the production build) to work.
+
 ## Project Structure
 
 ```
-valient-website/
+methodic-landscaping/
 ├── app/
 │   ├── layout.tsx       # Root layout with fonts
 │   ├── page.tsx         # Main homepage
@@ -62,7 +64,9 @@ npm run start
 
 ## Color Palette
 
-- White: #FFFFFF
-- Light Blue: #C3E2FF
-- Bright Blue: #62B2FF
-- Black: #000000
+- Background (warm off-white): #F7F5EE
+- Primary deep green: #1C3A2A
+- Darker green (footer, hero overlay): #142C20
+- Accent green: #3F6B4C
+- Soft sage: #8FA98A
+- Body text: #16261C

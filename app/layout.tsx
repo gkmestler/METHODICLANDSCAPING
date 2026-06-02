@@ -11,24 +11,24 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://methodicventures.com'),
+  metadataBase: new URL('https://methodiclandscaping.com'),
   alternates: {
     canonical: '/',
   },
-  title: 'Methodic Ventures',
-  description: 'Sell your business to the next generation of entrepreneurs dedicated to preserving your legacy and scaling what you have built.',
+  title: 'Methodic Landscaping',
+  description: 'Sell your landscaping business to the next generation of operators dedicated to preserving your legacy and methodically growing what you have built.',
   icons: {
     icon: '/icon.svg',
   },
   openGraph: {
-    title: 'Methodic Ventures',
-    description: 'Sell your business to the next generation of entrepreneurs dedicated to preserving your legacy and scaling what you have built.',
+    title: 'Methodic Landscaping',
+    description: 'Sell your landscaping business to the next generation of operators dedicated to preserving your legacy and methodically growing what you have built.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Methodic Ventures',
-    description: 'Sell your business to the next generation of entrepreneurs dedicated to preserving your legacy and scaling what you have built.',
+    title: 'Methodic Landscaping',
+    description: 'Sell your landscaping business to the next generation of operators dedicated to preserving your legacy and methodically growing what you have built.',
   },
 }
 

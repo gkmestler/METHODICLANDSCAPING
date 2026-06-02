@@ -118,23 +118,27 @@ export default function Header() {
         <div className="container">
           <div className="header-content">
             <Link href="/" className="logo">
-              {(isDarkHeader || isScrolled || isMobileMenuOpen) ? (
-                <Image
-                  src="/images/METHODIC LOGO WHITE.png"
-                  alt="Methodic"
-                  width={150}
-                  height={37}
-                  priority
-                />
-              ) : (
-                <Image
-                  src="/images/METHODIC LOGO BLACK.png"
-                  alt="Methodic"
-                  width={150}
-                  height={37}
-                  priority
-                />
-              )}
+              <span className="logo-mark">
+                {(isDarkHeader || isScrolled || isMobileMenuOpen) ? (
+                  <Image
+                    src="/images/METHODIC LOGO WHITE.png"
+                    alt="Methodic"
+                    width={150}
+                    height={37}
+                    priority
+                  />
+                ) : (
+                  <Image
+                    src="/images/METHODIC LOGO BLACK.png"
+                    alt="Methodic"
+                    width={150}
+                    height={37}
+                    priority
+                  />
+                )}
+              </span>
+              <span className="logo-divider" aria-hidden="true" />
+              <span className="logo-tagline">Landscaping</span>
             </Link>
 
             <nav>

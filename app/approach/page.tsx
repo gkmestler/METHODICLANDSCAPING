@@ -11,7 +11,7 @@ export default function ApproachPage() {
             <div className="approach-hero-content">
               <h1>Our Approach</h1>
               <p>
-                We partner with owners of essential service businesses across New England,
+                We partner with owners of landscaping and hardscaping businesses across New England,
                 providing a seamless transition that honors your legacy while positioning
                 your business for continued growth.
               </p>
@@ -25,7 +25,7 @@ export default function ApproachPage() {
             <div className="criteria-header">
               <h2>Acquisition Criteria</h2>
               <p className="criteria-intro">
-                We focus on acquiring essential service businesses in New England
+                We focus on acquiring landscaping businesses in New England
                 that meet the following criteria:
               </p>
             </div>
@@ -44,8 +44,8 @@ export default function ApproachPage() {
                       />
                     </div>
                     <div className="criteria-text">
-                      <h3><span style={{ whiteSpace: 'nowrap' }}>$500K - $1.5M</span></h3>
-                      <p>Cash Flow</p>
+                      <h3><span style={{ whiteSpace: 'nowrap' }}>$300K - $1.5M</span></h3>
+                      <p>EBITDA</p>
                     </div>
                   </div>
 
@@ -74,8 +74,8 @@ export default function ApproachPage() {
                       />
                     </div>
                     <div className="criteria-text">
-                      <h3>0-10%</h3>
-                      <p>annual growth</p>
+                      <h3>Recurring</h3>
+                      <p>maintenance revenue</p>
                     </div>
                   </div>
 
@@ -89,8 +89,8 @@ export default function ApproachPage() {
                       />
                     </div>
                     <div className="criteria-text">
-                      <h3>Strong barriers</h3>
-                      <p>to entry</p>
+                      <h3>Loyal</h3>
+                      <p>crews</p>
                     </div>
                   </div>
 
@@ -104,8 +104,8 @@ export default function ApproachPage() {
                       />
                     </div>
                     <div className="criteria-text">
-                      <h3>Stable</h3>
-                      <p>demand</p>
+                      <h3>Strong local</h3>
+                      <p>reputation</p>
                     </div>
                   </div>
 
@@ -119,8 +119,8 @@ export default function ApproachPage() {
                       />
                     </div>
                     <div className="criteria-text">
-                      <h3>Mature</h3>
-                      <p>industry</p>
+                      <h3>Established</h3>
+                      <p>route density</p>
                     </div>
                   </div>
                 </div>
@@ -134,12 +134,12 @@ export default function ApproachPage() {
           <div className="container">
             <div className="region-content">
               <div className="region-text">
-                <h2>We Buy Businesses in New England</h2>
+                <h2>We Buy Landscaping Businesses in New England</h2>
                 <p>
                   Our focus on New England allows us to build deep relationships
-                  within the community and provide hands-on support to the businesses
-                  we acquire. We understand the unique characteristics of this region
-                  and are committed to preserving the local identity of each business.
+                  within the community and provide hands-on support to the landscaping
+                  businesses we acquire. We understand the unique characteristics of this
+                  region and are committed to preserving the local identity of each business.
                 </p>
                 <ul className="region-states">
                   <li>Massachusetts</li>
@@ -157,6 +157,7 @@ export default function ApproachPage() {
                   width={600}
                   height={600}
                   className="map-image"
+                  style={{ filter: 'grayscale(100%)' }}
                 />
               </div>
             </div>

@@ -3,8 +3,8 @@ import React from 'react'
 export default function Statistics() {
   const stats = [
     { value: '2024', label: 'Founded' },
-    { value: '$5M+', label: 'In Revenue' },
-    { value: 'Trade Services', label: 'Target Industry' },
+    { value: 'Landscaping', label: 'Target Industry' },
+    { value: 'New England', label: 'Where We Buy' },
     { value: '7', label: 'Strategic Advisors' },
   ]
 

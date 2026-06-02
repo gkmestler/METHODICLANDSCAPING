@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+/* Theme tokens - Methodic Landscaping green palette */
+:root {
+  --color-bg: #F7F5EE;          /* warm off-white background */
+  --color-primary: #1C3A2A;     /* deep green - buttons, dark sections */
+  --color-dark: #142C20;        /* darker green - footer, hero overlay */
+  --color-accent: #3F6B4C;      /* accent green */
+  --color-sage: #8FA98A;        /* soft sage */
+  --color-text: #16261C;        /* body text */
+}
+
 html {
   overflow-x: hidden;
 }
@@ -17,7 +27,8 @@ body {
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  color: #000000;
+  color: #16261C;
+  background: #F7F5EE;
 }
 
 /* Typography */
@@ -67,8 +78,8 @@ h1, h2, h3 {
 }
 
 .header.scrolled {
-  background-color: #000000 !important;
-  background: #000000 !important;
+  background-color: #1C3A2A !important;
+  background: #1C3A2A !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   /* Keep the same padding - no size change */
@@ -82,12 +93,19 @@ h1, h2, h3 {
 }
 
 .logo {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   line-height: 0;
+  height: 37px;
+}
+
+.logo-mark {
   position: relative;
+  display: inline-block;
   height: 37px;
   width: 150px;
+  flex-shrink: 0;
 }
 
 .logo img {
@@ -99,6 +117,38 @@ h1, h2, h3 {
   top: 0;
   left: 0;
   transition: opacity 0.3s ease;
+}
+
+.logo-divider {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  margin: 0 14px;
+  background-color: #1C3A2A;
+  transition: background-color 0.3s ease;
+}
+
+.logo-tagline {
+  font-family: 'Georgia', 'Georgia Pro', serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: #1C3A2A;
+  transition: color 0.3s ease;
+}
+
+.header.scrolled .logo-divider,
+.header.header-dark .logo-divider,
+.header.mobile-menu-open .logo-divider {
+  background-color: #FFFFFF;
+}
+
+.header.scrolled .logo-tagline,
+.header.header-dark .logo-tagline,
+.header.mobile-menu-open .logo-tagline {
+  color: #FFFFFF;
 }
 
 .logo .logo-black {
@@ -122,7 +172,7 @@ h1, h2, h3 {
 }
 
 .nav-links a {
-  color: #000000;
+  color: #1C3A2A;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -138,7 +188,7 @@ h1, h2, h3 {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: #1C3A2A;
   transition: width 0.3s ease;
   transform: translateX(-50%);
 }
@@ -172,7 +222,7 @@ h1, h2, h3 {
 
 /* Dark header variant for qualify page */
 .header.header-dark {
-  background: #000000;
+  background: #1C3A2A;
 }
 
 .header.header-dark .nav-links a {
@@ -185,8 +235,8 @@ h1, h2, h3 {
 
 /* Dark header should stay dark when scrolled */
 .header.header-dark.scrolled {
-  background: #000000 !important;
-  background-color: #000000 !important;
+  background: #1C3A2A !important;
+  background-color: #1C3A2A !important;
 }
 
 .header.header-dark.scrolled .nav-links a {
@@ -203,7 +253,7 @@ h1, h2, h3 {
 }
 
 .mobile-nav-dark {
-  background: #000000 !important;
+  background: #1C3A2A !important;
   border-top: none;
   box-shadow: none;
 }
@@ -218,8 +268,8 @@ h1, h2, h3 {
 
 /* Mobile menu open state - header turns black */
 .header.mobile-menu-open {
-  background: #000000 !important;
-  background-color: #000000 !important;
+  background: #1C3A2A !important;
+  background-color: #1C3A2A !important;
 }
 
 .header.mobile-menu-open .menu-icon::before,
@@ -229,7 +279,7 @@ h1, h2, h3 {
 
 /* Mobile nav gets black background when open */
 .mobile-nav.open {
-  background: #000000 !important;
+  background: #1C3A2A !important;
 }
 
 .mobile-nav.open .mobile-nav-links a {
@@ -269,7 +319,7 @@ h1, h2, h3 {
   left: 0;
   width: 25px;
   height: 2px;
-  background: #000000;
+  background: #1C3A2A;
   transition: all 0.3s ease;
 }
 
@@ -304,7 +354,7 @@ h1, h2, h3 {
   top: 61px;
   left: 0;
   right: 0;
-  background: #000000;
+  background: #1C3A2A;
   padding: 20px;
   box-shadow: none;
   z-index: 999;
@@ -323,7 +373,7 @@ h1, h2, h3 {
 }
 
 .mobile-nav-links a {
-  color: #000000;
+  color: #1C3A2A;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -339,7 +389,7 @@ h1, h2, h3 {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: #1C3A2A;
   transition: width 0.3s ease;
   transform: translateX(-50%);
 }
@@ -357,11 +407,28 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: radial-gradient(ellipse 1800px 1200px at 85% 70%, #62B2FF 0%, #7FC0FF 15%, #C3E2FF 35%, #E6F3FF 55%, #FFFFFF 80%);
+  background: #F7F5EE;
   display: flex;
   align-items: center;
   padding: 100px 0 100px;
   position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/images/Landscape Image.jpeg') center/cover no-repeat;
+  filter: blur(12px);
+  opacity: 0.3;
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -403,7 +470,7 @@ h1, h2, h3 {
   font-size: 42px;
   margin-bottom: 20px;
   font-weight: normal;
-  color: #000000;
+  color: #1C3A2A;
   line-height: 1.15;
 }
 
@@ -421,7 +488,7 @@ h1, h2, h3 {
 
 .hero h1 .italic {
   font-style: italic;
-  color: #000000;
+  color: #1C3A2A;
   white-space: nowrap;
 }
 
@@ -434,7 +501,7 @@ h1, h2, h3 {
   margin: 30px 0 40px;
   max-width: 650px;
   line-height: 1.8;
-  color: #000000;
+  color: #1C3A2A;
 }
 
 @media (min-width: 768px) {
@@ -447,26 +514,26 @@ h1, h2, h3 {
   display: inline-block;
   padding: 10px 25px;
   background: transparent;
-  color: #000000;
+  color: #1C3A2A;
   text-decoration: none;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 400;
   transition: all 0.3s ease;
-  border: 2px solid #000000;
+  border: 2px solid #1C3A2A;
   cursor: pointer;
 }
 
 .hero-cta-button:hover {
-  background: #000000;
+  background: #1C3A2A;
   color: #FFFFFF;
 }
 
 .cta-button {
   display: inline-block;
   padding: 18px 50px;
-  background: linear-gradient(90deg, #C3E2FF 0%, #62B2FF 100%);
-  color: #000000;
+  background: linear-gradient(90deg, #8FA98A 0%, #3F6B4C 100%);
+  color: #1C3A2A;
   text-decoration: none;
   border-radius: 50px;
   font-size: 16px;
@@ -478,12 +545,12 @@ h1, h2, h3 {
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(98, 178, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(63, 107, 76, 0.3);
 }
 
 /* Statistics Section */
 .statistics {
-  background: #000000;
+  background: #1C3A2A;
   padding: 0;
   margin-top: -1px;
 }
@@ -503,7 +570,7 @@ h1, h2, h3 {
 .stat-card {
   padding: 40px 20px;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid #2F4438;
 }
 
 .stat-card h3 {
@@ -524,8 +591,8 @@ h1, h2, h3 {
 /* About PE Section */
 .about-pe {
   background:
-    radial-gradient(ellipse 2400px 1200px at 50% 120%, #62B2FF 0%, #3D7FCC 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
-    linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+    radial-gradient(ellipse 2400px 1200px at 50% 120%, #3F6B4C 0%, #2F5640 10%, #1C3A2A 25%, #142C20 40%, transparent 60%),
+    linear-gradient(180deg, #1C3A2A 0%, #16261C 100%);
   padding: 100px 0;
   color: #FFFFFF;
   position: relative;
@@ -584,13 +651,13 @@ h1, h2, h3 {
 
 .outline-button:hover {
   background: #FFFFFF;
-  color: #000000;
+  color: #1C3A2A;
 }
 
 /* Leadership Section */
 .leadership {
   background:
-    radial-gradient(ellipse 2800px 2000px at 0% 50%, #62B2FF 0%, #7FC0FF 15%, #C3E2FF 35%, #E6F3FF 55%, #FFFFFF 80%);
+    radial-gradient(ellipse 2800px 2000px at 0% 50%, #3F6B4C 0%, #5E8A66 15%, #8FA98A 35%, #DCE5D5 55%, #F7F5EE 80%);
   padding: 100px 0;
 }
 
@@ -601,7 +668,7 @@ h1, h2, h3 {
 .leadership-subtext {
   font-size: 16px;
   line-height: 1.7;
-  color: #000000;
+  color: #1C3A2A;
   max-width: 700px;
   margin: 0 auto 50px;
   opacity: 0.85;
@@ -626,7 +693,7 @@ h1, h2, h3 {
 }
 
 .founders-image-frame {
-  border: 2px solid #000000;
+  border: 2px solid #1C3A2A;
   overflow: hidden;
   line-height: 0;
 }
@@ -640,7 +707,7 @@ h1, h2, h3 {
 
 .founders-caption {
   font-size: 15px;
-  color: #000000;
+  color: #1C3A2A;
   opacity: 0.7;
   margin-top: 14px;
   font-style: italic;
@@ -668,11 +735,11 @@ h1, h2, h3 {
 }
 
 .team-card {
-  background: #C3E2FF;
+  background: #8FA98A;
   border-radius: 0;
   overflow: hidden;
   cursor: pointer;
-  border: 1px solid #000000;
+  border: 1px solid #1C3A2A;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -705,7 +772,7 @@ h1, h2, h3 {
 }
 
 .team-info {
-  background: #000000;
+  background: #1C3A2A;
   padding: 8px 15px 5px 15px;
   display: flex;
   justify-content: space-between;
@@ -830,8 +897,8 @@ h1, h2, h3 {
 /* Advisors Section */
 .advisors {
   background:
-    radial-gradient(ellipse 2400px 1200px at 50% 120%, #62B2FF 0%, #3D7FCC 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
-    #000000;
+    radial-gradient(ellipse 2400px 1200px at 50% 120%, #3F6B4C 0%, #2F5640 10%, #1C3A2A 25%, #142C20 40%, transparent 60%),
+    #1C3A2A;
   padding: 100px 0;
   color: #FFFFFF;
   position: relative;
@@ -884,7 +951,7 @@ h1, h2, h3 {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  background: #333;
+  background: #2F4438;
 }
 
 .advisor-image-wrapper {
@@ -892,7 +959,7 @@ h1, h2, h3 {
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  background: #333;
+  background: #2F4438;
   flex-shrink: 0;
 }
 
@@ -954,7 +1021,7 @@ h1, h2, h3 {
 
 /* Footer */
 .footer {
-  background: #000000;
+  background: #142C20;
   padding: 60px 0 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1042,7 +1109,7 @@ h1, h2, h3 {
 /* Qualify Page Styles */
 .qualify-page {
   min-height: 100vh;
-  background: #000000;
+  background: #1C3A2A;
 }
 
 .qualify-main {
@@ -1079,14 +1146,14 @@ h1, h2, h3 {
 .qualify-form-container {
   max-width: 800px;
   margin: 0 auto;
-  background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+  background: linear-gradient(180deg, #16261C 0%, #102018 100%);
   border-radius: 20px;
   padding: 50px;
   box-shadow:
-    0 0 60px rgba(98, 178, 255, 0.15),
-    0 0 100px rgba(98, 178, 255, 0.1),
+    0 0 60px rgba(63, 107, 76, 0.15),
+    0 0 100px rgba(63, 107, 76, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(98, 178, 255, 0.2);
+  border: 1px solid rgba(63, 107, 76, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -1154,7 +1221,7 @@ h1, h2, h3 {
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: #62B2FF;
+  border-color: #3F6B4C;
 }
 
 .form-field input::placeholder,
@@ -1216,11 +1283,11 @@ h1, h2, h3 {
 
 .select-wrapper select:focus {
   outline: none;
-  border-color: #62B2FF;
+  border-color: #3F6B4C;
 }
 
 .select-wrapper select option {
-  background: #1a1a1a;
+  background: #16261C;
   color: #FFFFFF;
 }
 
@@ -1232,7 +1299,7 @@ h1, h2, h3 {
 
 .submit-btn {
   padding: 16px 40px;
-  background: #000000;
+  background: #1C3A2A;
   color: #FFFFFF;
   border: none;
   border-radius: 8px;
@@ -1244,13 +1311,13 @@ h1, h2, h3 {
 }
 
 .submit-btn:hover {
-  background: #1a1a1a;
+  background: #16261C;
 }
 
 /* Portfolio Page Styles */
 .portfolio-page {
   min-height: 100vh;
-  background: radial-gradient(ellipse 2000px 1400px at 80% 80%, #62B2FF 0%, #7FC0FF 15%, #C3E2FF 35%, #E6F3FF 55%, #FFFFFF 80%);
+  background: radial-gradient(ellipse 2000px 1400px at 80% 80%, #3F6B4C 0%, #5E8A66 15%, #8FA98A 35%, #DCE5D5 55%, #F7F5EE 80%);
 }
 
 .portfolio-main {
@@ -1264,7 +1331,7 @@ h1, h2, h3 {
 
 .portfolio-header h1 {
   font-size: 36px;
-  color: #000000;
+  color: #1C3A2A;
   margin-bottom: 15px;
   font-family: 'Georgia', 'Georgia Pro', serif;
 }
@@ -1329,7 +1396,7 @@ a.portfolio-card {
 }
 
 .portfolio-card:hover {
-  border-color: #62B2FF;
+  border-color: #3F6B4C;
 }
 
 .portfolio-logo {
@@ -1377,14 +1444,14 @@ a.portfolio-card {
 /* Approach Page Styles */
 .approach-page {
   min-height: 100vh;
-  background: #FFFFFF;
+  background: #F7F5EE;
 }
 
 .approach-hero {
   min-height: 80vh;
   background:
-    radial-gradient(ellipse 2400px 1200px at 100% 120%, #62B2FF 0%, #3D7FCC 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
-    #000000;
+    radial-gradient(ellipse 2400px 1200px at 100% 120%, #3F6B4C 0%, #2F5640 10%, #1C3A2A 25%, #142C20 40%, transparent 60%),
+    #1C3A2A;
   display: flex;
   align-items: center;
   padding: 180px 0 120px;
@@ -1424,7 +1491,7 @@ a.portfolio-card {
 
 /* Acquisition Criteria Section */
 .acquisition-criteria {
-  background: #000000;
+  background: #1C3A2A;
   padding: 100px 0;
 }
 
@@ -1441,7 +1508,7 @@ a.portfolio-card {
   right: -30px;
   bottom: -30px;
   border-radius: 40px;
-  background: linear-gradient(135deg, #4A9EE8 0%, #62B2FF 25%, #7FC0FF 50%, #62B2FF 75%, #4A9EE8 100%);
+  background: linear-gradient(135deg, #3F6B4C 0%, #3F6B4C 25%, #5E8A66 50%, #3F6B4C 75%, #3F6B4C 100%);
   filter: blur(50px);
   opacity: 0.4;
   z-index: 0;
@@ -1451,7 +1518,7 @@ a.portfolio-card {
 .criteria-card {
   position: relative;
   z-index: 1;
-  background: #000000;
+  background: #1C3A2A;
   border-radius: 20px;
   padding: 60px 40px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
@@ -1606,7 +1673,7 @@ a.portfolio-card {
   left: 0;
   margin-top: 10px;
   background: #FFFFFF;
-  color: #000000;
+  color: #1C3A2A;
   padding: 15px;
   border-radius: 8px;
   font-size: 14px;
@@ -1628,8 +1695,8 @@ a.portfolio-card {
 /* Region Section */
 .region-section {
   background:
-    radial-gradient(ellipse 2400px 1200px at 50% 120%, #62B2FF 0%, #3D7FCC 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
-    #000000;
+    radial-gradient(ellipse 2400px 1200px at 50% 120%, #3F6B4C 0%, #2F5640 10%, #1C3A2A 25%, #142C20 40%, transparent 60%),
+    #1C3A2A;
   padding: 100px 0;
   color: #FFFFFF;
 }
@@ -1703,7 +1770,7 @@ a.portfolio-card {
   transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background: #62B2FF;
+  background: #3F6B4C;
   border-radius: 50%;
 }
 

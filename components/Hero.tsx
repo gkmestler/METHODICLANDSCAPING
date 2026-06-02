@@ -7,10 +7,10 @@ export default function Hero() {
         <div className="hero-content">
           <h1>
             Preserving <span className="italic">What Works</span>.<br />
-            Unlocking <span className="italic">What's Possible</span>.
+            Growing <span className="italic">What's Possible</span>.
           </h1>
           <p>
-            Partner with the next generation of entrepreneurs committed to preserving your legacy and methodically scaling what you've built.
+            Partnering with the next generation of operators to preserve the owner's legacy and methodically grow the landscaping business they built.
           </p>
           <a href="/sell" className="hero-cta-button">
             See if we're a fit
