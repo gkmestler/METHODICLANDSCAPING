@@ -770,13 +770,6 @@ h1, h2, h3 {
   filter: grayscale(0%) contrast(1.05) brightness(var(--tile-brightness, 1.02)) blur(var(--tile-blur, 0));
 }
 
-/* Drop the soften blur on mobile, where the scaled-up image already reads soft */
-@media (max-width: 575px) {
-  .team-image {
-    --tile-blur: 0px;
-  }
-}
-
 .team-info-wrapper {
   padding: 10px;
   position: absolute;
