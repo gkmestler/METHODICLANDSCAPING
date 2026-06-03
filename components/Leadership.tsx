@@ -36,7 +36,6 @@ export default function Leadership() {
                   style={{
                     ...member.imageStyle,
                     ...(member.brightness && { ['--tile-brightness' as string]: member.brightness }),
-                    ...(member.blur && { ['--tile-blur' as string]: `${member.blur}px` }),
                   } as React.CSSProperties}
                 />
                 <div className="team-info-wrapper">
