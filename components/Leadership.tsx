@@ -32,14 +32,12 @@ export default function Leadership() {
                   width={300}
                   height={340}
                   className="team-image"
+                  sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 25vw"
                   style={{
                     ...member.imageStyle,
-                    ...(member.brightness && {
-                      filter: expandedIndex === index
-                        ? `grayscale(0%) contrast(1.05) brightness(${member.brightness})${member.blur ? ` blur(${member.blur}px)` : ''}`
-                        : `grayscale(85%) contrast(1.05) brightness(${member.brightness})${member.blur ? ` blur(${member.blur}px)` : ''}`
-                    })
-                  }}
+                    ...(member.brightness && { ['--tile-brightness' as string]: member.brightness }),
+                    ...(member.blur && { ['--tile-blur' as string]: `${member.blur}px` }),
+                  } as React.CSSProperties}
                 />
                 <div className="team-info-wrapper">
                   <div className={`team-info ${expandedIndex === index ? 'expanded' : ''}`}>
