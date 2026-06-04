@@ -6,8 +6,7 @@ export default function Hero() {
       <div className="container">
         <div className="hero-content">
           <h1>
-            Preserving <span className="italic">What Works</span>.<br />
-            Growing <span className="italic">What's Possible</span>.
+            Partner with the next generation of entrepreneurs committed to preserving your legacy and methodically scaling the landscaping company you've built.
           </h1>
           <p>
             Partnering with the next generation of operators to preserve the owner's legacy and methodically grow the landscaping business they built.
